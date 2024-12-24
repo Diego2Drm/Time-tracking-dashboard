@@ -1,11 +1,13 @@
+import { NameCard } from './components/NameCard'
+import styles from './index.module.css'
 
 function App() {
 
 
   return (
-    <>
-      <h1>Time tracking dashboard</h1>
-    </>
+    <section className={styles.container}>
+      <NameCard />
+    </section>
   )
 }
 

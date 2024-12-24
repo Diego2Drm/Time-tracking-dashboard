@@ -36,4 +36,65 @@
 html {
   font-size: 62.5%;
   font-family: "Rubik", serif;
+  background: var(--Very-dark-blue);
+}
+
+.container {
+  padding: 5rem 2rem;
+  display: grid;
+  justify-items: center;
+}
+
+/* Name Card */
+.nameCardContent {
+  background: var(--Dark-blue);
+  border-radius: 2rem;
+  overflow: hidden;
+  width: 100%;
+  height: 17rem;
+
+}
+
+.nameCardContentAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Blue);
+  gap: 1.5rem;
+  height: 65%;
+  border-radius: 1rem;
+}
+
+.nameCardContentAvatar img {
+  width: 6rem;
+  border-radius: 50%;
+  border: .2rem solid var(--Pale-Blue);
+}
+
+.nameCardContentAvatar p span:nth-child(1) {
+  color: var(--Desaturated-blue);
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: block;
+}
+
+.nameCardContentAvatar p span:nth-child(2) {
+  color: var(--Pale-Blue);
+  display: block;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.nameCardContentLinks{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35%;
+}
+.nameCardContentLinks ul {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--Pale-Blue);
+  width: 100%;
+  list-style: none;
+  font-size: 1.4rem;
 }
