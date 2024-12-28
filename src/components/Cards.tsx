@@ -1,11 +1,7 @@
 import React from 'react';
 import style from '../index.module.css';
-import { Activity } from '../App';
+import { CardProps } from '../utils/types';
 import { CardInfo } from './CardInfo';
-
-interface CardProps{
-  activity: Activity;
-}
 
 const Cards: React.FC<CardProps> = ({activity}) => {
   return (

@@ -3,24 +3,7 @@ import { NameCard } from './components/NameCard'
 import styles from './index.module.css'
 import data from './data.json'
 import { useEffect, useState } from 'react';
-
-export interface TimeFrame {
-  current: number;
-  previous: number;
-}
-
-export interface TimeFrames {
-  daily: TimeFrame;
-  weekly: TimeFrame;
-  monthly: TimeFrame;
-}
-
-export interface Activity {
-  title: string;
-  image: string;
-  background: string;
-  timeframes: TimeFrames;
-}
+import { Activity } from './utils/types';
 
 
 function App() {
