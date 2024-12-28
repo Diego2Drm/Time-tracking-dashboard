@@ -105,7 +105,7 @@ html {
   margin-top: 4rem;
 }
 .cardsContent {
-  background: lightcyan;
+  /* background: lightcyan; */
   position: relative;
   overflow: hidden;
   height: 15rem;
