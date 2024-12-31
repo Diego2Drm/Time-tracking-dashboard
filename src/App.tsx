@@ -23,9 +23,9 @@ function App() {
 
       <Routes>
       <Route path="/" element={<Navigate to="/weekly" />} />
-        <Route path="/weekly" element={<Weekly />} />
-        <Route path="/daily" element={<Daily />} />
-        <Route path="/monthly" element={<Monthly />} />
+        <Route path="/daily" element={<Daily activities={actvities}/>} />
+        <Route path="/weekly" element={<Weekly activities={actvities}/>} />
+        <Route path="/monthly" element={<Monthly activities={actvities}/>} />
       </Routes>
       {/* {
         actvities.map((activity, index) => (
