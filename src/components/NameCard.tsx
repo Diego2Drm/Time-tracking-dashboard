@@ -1,5 +1,6 @@
 import style from '../index.module.css';
 import avatar from '../assets/images/image-jeremy.png';
+import { Links } from './Links';
 
 const NameCard = () => {
   return (
@@ -13,9 +14,7 @@ const NameCard = () => {
       </div>
       <div className={style.nameCardContentLinks}>
         <ul>
-          <li>Daily</li>
-          <li>Weekly</li>
-          <li>Monthly</li>
+          <Links />
         </ul>
       </div>
     </section>
