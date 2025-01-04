@@ -1,6 +1,7 @@
 import React from "react";
 import { Cards } from "./Cards";
 import { Activity } from "../utils/types";
+import style from '../index.module.css'
 
 interface WeeklyProps {
   activities: Activity[];
@@ -9,7 +10,7 @@ interface WeeklyProps {
 const Weekly: React.FC<WeeklyProps> = ({activities}) => {
 
   return (
-    <>
+    <section className={style.gridContainer}>
       {
         activities.map((activity, index) => (
           <Cards 
@@ -22,7 +23,7 @@ const Weekly: React.FC<WeeklyProps> = ({activities}) => {
           previous={activity.timeframes.weekly.previous}/>
         ))
       }
-    </>
+    </section>
   );
 };
 

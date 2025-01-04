@@ -1,4 +1,3 @@
-import { Cards } from './components/Cards'
 import { NameCard } from './components/NameCard'
 import styles from './index.module.css'
 import data from './data.json'

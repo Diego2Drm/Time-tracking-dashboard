@@ -84,12 +84,14 @@ html {
   font-size: 2rem;
   font-weight: 400;
 }
-.nameCardContentLinks{
+
+.nameCardContentLinks {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 35%;
 }
+
 .nameCardContentLinks ul {
   display: flex;
   justify-content: space-evenly;
@@ -98,26 +100,29 @@ html {
   list-style: none;
   font-size: 1.4rem;
 }
-.dislable{
+
+.dislable {
   text-decoration: none;
   color: var(--Desaturated-blue);
   font-size: 1.6rem;
 }
-.active{
+
+.active {
   text-decoration: none;
   color: var(--Pale-Blue);
   font-size: 1.8rem;
 }
 
-h1{
-  color: red;
+/* Cards */
+.gridContainer {
+  width: 100%;
 }
 
-/* Cards */
-.cardsContainer{
+.cardsContainer {
   width: 100%;
   margin-top: 4rem;
 }
+
 .cardsContent {
   /* background: lightcyan; */
   position: relative;
@@ -127,43 +132,137 @@ h1{
   padding-top: 4rem;
   box-shadow: 0 0 .5rem #ffffff;
 }
-.cardsContent .cardIcon{
+
+.cardsContent .cardIcon {
   position: absolute;
   top: 0;
   right: 1.5rem;
   z-index: 1;
 }
-.cardsContent .cardsInfo{
+
+.cardsContent .cardsInfo {
   background: var(--Dark-blue);
   height: 100%;
   border-radius: 1rem;
   position: relative;
   z-index: 2;
-}
-.cardsInfo {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
 }
-.cardsInfo div{
+
+.cardsInfo div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.cardsInfo div:nth-child(1) h3{
-  color: var(--Pale-Blue);
+.cardsInfo div:nth-child(1) h3 {
+  color: #fff;
   font-weight: 600;
   font-size: 1.6rem;
 }
-.cardsInfo div:nth-child(2) p:nth-child(1){
-  color: var(--Pale-Blue);
+
+.cardsInfo div:nth-child(2) p:nth-child(1) {
+  color: #fff;
   font-weight: 300;
   font-size: 2.5rem;
 }
-.cardsInfo div:nth-child(2) p:nth-child(2){
+
+.cardsInfo div:nth-child(2) p:nth-child(2) {
   color: var(--Pale-Blue);
   font-weight: 300;
   font-size: 1.4rem;
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    height: 55rem;
+    margin: 0 auto;
+  }
+
+  .gridContainer {
+    display: grid;
+    width: 75%;
+    height: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  /* Name Card */
+  .nameCardContent {
+    width: 25%;
+    height: 100%;
+  }
+
+  .nameCardContentAvatar {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 2rem;
+  }
+
+  .nameCardContentAvatar img {
+    width: 10rem;
+    border: .5rem solid var(--Pale-Blue);
+  }
+
+  .nameCardContentAvatar p span:nth-child(1) {
+    font-size: 1.8rem;
+    margin-block-start: 2rem;
+  }
+
+  .nameCardContentAvatar p span:nth-child(2) {
+    font-size: 3.5rem;
+  }
+
+  .nameCardContentLinks {
+    padding-inline-start: 3rem;
+  }
+
+  .nameCardContentLinks ul {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Cards */
+  .cardsContainer {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .cardsContent {
+    height: 100%;
+  }
+
+  .cardsContent .cardsInfo {
+    gap: 3rem;
+  }
+
+  .cardsInfo div:nth-child(2) {
+    align-items: start;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  .cardsInfo div:nth-child(2) p:nth-child(1) {
+    font-size: 4.5rem;
+  }
+
+  .cardsInfo div:nth-child(2) p:nth-child(2) {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 80%;
+  }
+  
 }
