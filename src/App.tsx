@@ -17,7 +17,8 @@ function App() {
   }, [])
 
   return (
-    <section className={styles.container}>
+<>
+<section className={styles.container}>
       <NameCard />
 
       <Routes>
@@ -32,6 +33,11 @@ function App() {
         ))
       } */}
     </section>
+    <div className={styles.attribution}>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Diego Ramirez</a>.
+    </div> 
+</>
   )
 }
 

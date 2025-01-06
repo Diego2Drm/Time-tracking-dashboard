@@ -37,6 +37,7 @@ html {
   font-size: 62.5%;
   font-family: "Rubik", serif;
   background: var(--Very-dark-blue);
+  position: relative;
 }
 
 .container {
@@ -176,6 +177,20 @@ html {
   font-size: 1.4rem;
 }
 
+/* Author */
+.attribution {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  font-size: 1.2rem;
+}
+
+.attribution a {
+  color: #4acf81;
+}
+
 
 @media (min-width: 1024px) {
   .container {
@@ -258,11 +273,21 @@ html {
   .cardsInfo div:nth-child(2) p:nth-child(2) {
     font-size: 1.2rem;
   }
+
+  /* Author */
+  .attribution {
+    bottom: -2rem;
+  }
 }
 
-@media (min-width: 1440px) {
-  .container {
-    width: 80%;
+  @media (min-width: 1440px) {
+    .container {
+      width: 80%;
+    }
+
+      /* Author */
+  .attribution {
+    bottom: -8rem;
   }
-  
-}
+
+  }
