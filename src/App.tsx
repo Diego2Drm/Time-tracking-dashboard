@@ -35,7 +35,7 @@ function App() {
     </section>
     <div className={styles.attribution}>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Diego Ramirez</a>.
+      Coded by <a href="https://github.com/Diego2Drm/Time-tracking-dashboard">Diego Ramirez</a>.
     </div> 
 </>
   )
